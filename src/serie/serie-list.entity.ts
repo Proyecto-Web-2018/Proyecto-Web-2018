@@ -1,7 +1,7 @@
 import { Column, Entity, JoinTable, ManyToMany, ManyToOne, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
 import { UsuarioEntity } from '../usuario/usuario.entity';
 import { SerieEntity } from './serie.entity';
-import { EstadoSerieEntity } from './estadoSerie.entity';
+import { EstadoSerieEntity } from './estado-serie.entity';
 
 @Entity('web_lista_serie')
 export class SerieListEntity {
