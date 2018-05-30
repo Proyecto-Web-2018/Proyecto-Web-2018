@@ -13,7 +13,7 @@ export class UsuarioPipe implements PipeTransform{
     if (!error) {
       return jsonAValidar;
     } else {
-      throw new Error('Json no valido');
+      throw new Error('Usuario no valido');
 
     }
   }
