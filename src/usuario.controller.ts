@@ -1,5 +1,5 @@
 import { Body, Controller, Post } from '@nestjs/common';
-import { UsuarioService } from './usuario.service';
+import { UsuarioService } from './usuario/usuario.service';
 import { UsuarioPipe } from './pipes/usuario.pipe';
 import { USUARIO_SCHEMA } from './usuario/usuario.schema';
 
