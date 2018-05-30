@@ -18,11 +18,11 @@ import { TemporadaEntity } from './serie/temporada.entity';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mariadb',
-      host: 'localhost',
+      type: 'mysql',
+      host: 'web2018.mysql.database.azure.com',
       port: 3306,
-      username: 'root',
-      password: '',
+      username: 'web2018@web2018',
+      password: 'Edward10*',
       database: 'web2018',
       entities: [
         __dirname +
