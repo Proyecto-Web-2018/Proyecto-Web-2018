@@ -10,7 +10,6 @@ export const USUARIO_SCHEMA = Joi
       .required(),
     nombre: Joi
       .string()
-      .alphanum()
       .min(3)
       .max(30)
       .required(),
