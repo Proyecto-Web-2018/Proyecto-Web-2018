@@ -26,10 +26,10 @@ import { TemporadaEntity } from './serie/temporada.entity';
       database: 'web2018',
       entities: [
         __dirname +
-        '/../**/*.entity{.ts,.js}'
+        '/../**/*.entity{.ts,.js}',
       ],
       synchronize: true,
-      ssl: false
+      ssl: false,
     }),
     TypeOrmModule.forFeature([
       UsuarioEntity,
@@ -41,8 +41,8 @@ import { TemporadaEntity } from './serie/temporada.entity';
       CapituloEntity,
       SerieEntity,
       EstadoSerieEntity,
-      TemporadaEntity
-    ])
+      TemporadaEntity,
+    ]),
 
   ],
   controllers: [AppController, UsuarioController],
