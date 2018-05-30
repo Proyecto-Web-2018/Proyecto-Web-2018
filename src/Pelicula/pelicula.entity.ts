@@ -1,4 +1,8 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { SerieListEntity } from '../Serie/serieList.entity';
+import { PeliculaListEntity } from './peliculaList.entity';
+import { GeneroEntity } from '../otras/genero.entity';
+import { ActorEntity } from '../otras/actor.entity';
 
 @Entity('web_pelicula')
 export class PeliculaEntity {
@@ -13,4 +17,13 @@ export class PeliculaEntity {
 
   @Column()
   linkPelicula: string;
+
+  @ManyToMany(type => PeliculaListEntity, PeliculaListEntity => PeliculaListEntity.peliculas)
+  peliculaList: PeliculaListEntity[];
+
+  @ManyToMany(type => GeneroEntity, GeneroEntity => GeneroEntity.peliculas)
+  generos: GeneroEntity[];
+
+  @ManyToMany(type => ActorEntity, ActorEntity => ActorEntity.peliculas)
+  actores: ActorEntity[];
 }

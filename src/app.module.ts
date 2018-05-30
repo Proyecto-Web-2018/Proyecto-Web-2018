@@ -6,6 +6,14 @@ import { UsuarioService } from './usuario/usuario.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsuarioEntity } from './usuario/usuario.entity';
 import { SerieListEntity } from './Serie/serieList.entity';
+import { PeliculaEntity } from './Pelicula/pelicula.entity';
+import { PeliculaListEntity } from './Pelicula/peliculaList.entity';
+import { GeneroEntity } from './otras/genero.entity';
+import { ActorEntity } from './otras/actor.entity';
+import { CapituloEntity } from './Serie/capitulo.entity';
+import { SerieEntity } from './Serie/serie.entity';
+import { EstadoSerieEntity } from './Serie/estadoSerie.entity';
+import { TemporadaEntity } from './Serie/temporada.entity';
 
 @Module({
   imports: [
@@ -25,7 +33,15 @@ import { SerieListEntity } from './Serie/serieList.entity';
     }),
     TypeOrmModule.forFeature([
       UsuarioEntity,
-      SerieListEntity
+      SerieListEntity,
+      PeliculaEntity,
+      PeliculaListEntity,
+      GeneroEntity,
+      ActorEntity,
+      CapituloEntity,
+      SerieEntity,
+      EstadoSerieEntity,
+      TemporadaEntity
     ])
 
   ],

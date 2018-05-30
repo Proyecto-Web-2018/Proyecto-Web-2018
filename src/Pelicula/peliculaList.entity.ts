@@ -1,4 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinTable, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { UsuarioEntity } from '../usuario/usuario.entity';
+import { PeliculaEntity } from './pelicula.entity';
 
 @Entity('web_lista_pelicula')
 export class PeliculaListEntity {
@@ -7,4 +9,12 @@ export class PeliculaListEntity {
 
   @Column()
   nombreListaPelicula: string;
+
+  @ManyToOne(type => UsuarioEntity, UsuarioEntity => UsuarioEntity.peliculaList)
+  usuario: UsuarioEntity;
+
+
+  @ManyToMany(type => PeliculaEntity, PeliculaEntity => PeliculaEntity.peliculaList)
+  @JoinTable()
+  peliculas: PeliculaEntity[];
 }

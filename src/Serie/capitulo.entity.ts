@@ -1,4 +1,9 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { EstadoSerieEntity } from './estadoSerie.entity';
+import { SerieEntity } from './serie.entity';
+import { TemporadaEntity } from './temporada.entity';
+import { PeliculaEntity } from '../Pelicula/pelicula.entity';
+import { ActorEntity } from '../otras/actor.entity';
 
 @Entity('web_capitulo')
 export class CapituloEntity {
@@ -13,4 +18,15 @@ export class CapituloEntity {
 
   @Column()
   linCapitulo: string;
+
+  @OneToOne(type => EstadoSerieEntity, EstadoSerieEntity => EstadoSerieEntity.capitulo)
+  @JoinColumn()
+  estado: EstadoSerieEntity;
+
+  @ManyToOne(type => TemporadaEntity, TemporadaEntity => TemporadaEntity.capitulos)
+  temporada: TemporadaEntity;
+
+  @ManyToMany(type => ActorEntity, ActorEntity => ActorEntity.capitulos)
+  actores: ActorEntity[];
+
 }
