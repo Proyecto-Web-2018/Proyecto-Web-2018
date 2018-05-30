@@ -1,6 +1,6 @@
 import { Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { GeneroEntity } from '../otras/genero.entity';
-import { SerieListEntity } from './serieList.entity';
+import { SerieListEntity } from './serie-list.entity';
 import { TemporadaEntity } from './temporada.entity';
 
 @Entity('web_serie')

@@ -1,8 +1,8 @@
 import { Column, Entity, JoinColumn, JoinTable, ManyToMany, ManyToOne, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
-import { EstadoSerieEntity } from './estadoSerie.entity';
+import { EstadoSerieEntity } from './estado-serie.entity';
 import { SerieEntity } from './serie.entity';
 import { TemporadaEntity } from './temporada.entity';
-import { PeliculaEntity } from '../Pelicula/pelicula.entity';
+import { PeliculaEntity } from '../pelicula/pelicula.entity';
 import { ActorEntity } from '../otras/actor.entity';
 
 @Entity('web_capitulo')

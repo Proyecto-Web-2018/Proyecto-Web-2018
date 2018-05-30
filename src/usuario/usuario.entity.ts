@@ -1,6 +1,6 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { SerieListEntity } from '../Serie/serieList.entity';
-import { PeliculaListEntity } from '../Pelicula/peliculaList.entity';
+import { SerieListEntity } from '../serie/serie-list.entity';
+import { PeliculaListEntity } from '../pelicula/peliculaList.entity';
 
 @Entity('web_usuario')
 export class UsuarioEntity{

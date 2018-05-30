@@ -1,19 +1,19 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppService } from './usuario/app.service';
 import { UsuarioController } from './usuario.controller';
 import { UsuarioService } from './usuario/usuario.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsuarioEntity } from './usuario/usuario.entity';
-import { SerieListEntity } from './Serie/serieList.entity';
-import { PeliculaEntity } from './Pelicula/pelicula.entity';
-import { PeliculaListEntity } from './Pelicula/peliculaList.entity';
+import { SerieListEntity } from './serie/serie-list.entity';
+import { PeliculaEntity } from './pelicula/pelicula.entity';
+import { PeliculaListEntity } from './pelicula/peliculaList.entity';
 import { GeneroEntity } from './otras/genero.entity';
 import { ActorEntity } from './otras/actor.entity';
-import { CapituloEntity } from './Serie/capitulo.entity';
-import { SerieEntity } from './Serie/serie.entity';
-import { EstadoSerieEntity } from './Serie/estadoSerie.entity';
-import { TemporadaEntity } from './Serie/temporada.entity';
+import { CapituloEntity } from './serie/capitulo.entity';
+import { SerieEntity } from './serie/serie.entity';
+import { EstadoSerieEntity } from './serie/estado-serie.entity';
+import { TemporadaEntity } from './serie/temporada.entity';
 
 @Module({
   imports: [

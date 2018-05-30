@@ -1,6 +1,6 @@
 import { Column, Entity, JoinTable, ManyToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { PeliculaEntity } from '../Pelicula/pelicula.entity';
-import { SerieEntity } from '../Serie/serie.entity';
+import { PeliculaEntity } from '../pelicula/pelicula.entity';
+import { SerieEntity } from '../serie/serie.entity';
 
 @Entity('web_genero')
 export class GeneroEntity{
