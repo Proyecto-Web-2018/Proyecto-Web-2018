@@ -4,6 +4,8 @@ import { AppService } from './app.service';
 import { UsuarioController } from './usuario.controller';
 import { UsuarioService } from './usuario/usuario.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UsuarioEntity } from './usuario/usuario.entity';
+import { SerieListEntity } from './Serie/serieList.entity';
 
 @Module({
   imports: [
@@ -19,10 +21,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         '/../**/*.entity{.ts,.js}'
       ],
       synchronize: true,
-      ssl: true
+      ssl: false
     }),
     TypeOrmModule.forFeature([
-
+      UsuarioEntity,
+      SerieListEntity
     ])
 
   ],
