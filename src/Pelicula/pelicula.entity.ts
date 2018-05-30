@@ -1,6 +1,6 @@
 import { Column, Entity, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { SerieListEntity } from '../serie/serie-list.entity';
-import { PeliculaListEntity } from './peliculaList.entity';
+import { PeliculaListEntity } from './pelicula-list.entity';
 import { GeneroEntity } from '../otras/genero.entity';
 import { ActorEntity } from '../otras/actor.entity';
 

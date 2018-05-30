@@ -7,7 +7,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsuarioEntity } from './usuario/usuario.entity';
 import { SerieListEntity } from './serie/serie-list.entity';
 import { PeliculaEntity } from './pelicula/pelicula.entity';
-import { PeliculaListEntity } from './pelicula/peliculaList.entity';
+import { PeliculaListEntity } from './pelicula/pelicula-list.entity';
 import { GeneroEntity } from './otras/genero.entity';
 import { ActorEntity } from './otras/actor.entity';
 import { CapituloEntity } from './serie/capitulo.entity';
