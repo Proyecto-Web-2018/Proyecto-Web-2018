@@ -17,7 +17,7 @@ export class CapituloEntity {
   duracionCapitulo: string;
 
   @Column()
-  linCapitulo: string;
+  linkCapitulo: string;
 
   @OneToOne(type => EstadoSerieEntity, EstadoSerieEntity => EstadoSerieEntity.capitulo)
   @JoinColumn()
