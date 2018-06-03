@@ -14,6 +14,12 @@ import { CapituloEntity } from './serie/capitulo.entity';
 import { SerieEntity } from './serie/serie.entity';
 import { EstadoSerieEntity } from './serie/estado-serie.entity';
 import { TemporadaEntity } from './serie/temporada.entity';
+import { CapituloService } from './serie-schema/capitulo.service';
+import { SerieService } from './serie-schema/serie.service';
+import { TemporadaService } from './serie-schema/temporada.service';
+import { PeliculaService } from './pelicula-schema/pelicula.service';
+import { ActorService } from './otras-schema/actor.service';
+import { GeneroService } from './otras-schema/genero.service';
 
 @Module({
   imports: [
@@ -46,6 +52,6 @@ import { TemporadaEntity } from './serie/temporada.entity';
 
   ],
   controllers: [AppController, UsuarioController],
-  providers: [AppService, UsuarioService],
+  providers: [AppService, UsuarioService, CapituloService, SerieService, TemporadaService, PeliculaService, ActorService, GeneroService],
 })
 export class AppModule {}
