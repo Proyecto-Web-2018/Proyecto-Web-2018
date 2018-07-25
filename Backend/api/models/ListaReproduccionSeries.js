@@ -1,5 +1,5 @@
 /**
- * Genero.js
+ * ListaReproduccionSeries.js
  *
  * @description :: A model definition.  Represents a database table/collection/etc.
  * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
@@ -10,21 +10,16 @@ module.exports = {
   attributes: {
 
     nombre: {
-      type: 'string',
-      required: true
-    },
-    descripcion: {
       type: 'string'
     },
 
-    peliculas:{
-      collection: 'Peliculas',
-      via: 'generos'
+    usuario: {
+      model: 'Usuario'
     },
 
     series:{
       collection: 'Serie',
-      via: 'generos'
+      via: 'listaSeries'
     }
 
   },

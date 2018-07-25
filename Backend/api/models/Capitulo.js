@@ -9,19 +9,38 @@ module.exports = {
 
   attributes: {
 
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    titulo: {
+      type: 'string',
+      required: true
+    },
+    rating: {
+      type: 'number',
+      required: true
+    },
+    sinopsis: {
+      type: 'string',
+      required: true
+    },
+    imagen: {
+      type: 'string'
+    },
+    link: {
+      type: 'string',
+      required: true
+    },
+    duracion: {
+      type: 'string',
+      required: true
+    },
 
+    temporada:{
+      model: 'Temporada'
+    },
 
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+    actores:{
+      collection: 'Actor',
+      via: 'capitulos'
+    }
 
   },
 

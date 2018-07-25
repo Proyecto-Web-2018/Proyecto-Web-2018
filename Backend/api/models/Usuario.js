@@ -9,21 +9,36 @@ module.exports = {
 
   attributes: {
 
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    nombre: {
+      type: 'string'
+    },
+    apellido: {
+      type: 'string'
+    },
+    username: {
+      type: 'string',
+      required: true
+    },
+    password: {
+      type: 'string',
+      required: true
+    },
+    email: {
+      type: 'string',
+      required: true
+    },
 
+    listasPeliculas:{
+      collection: 'ListaReproduccionPeliculas',
+      via: 'usuario'
+    },
 
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
+    listasSeries:{
+      collection: 'ListaReproduccionSeries',
+      via: 'usuario'
+    }
 
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-
-  },
+  }
 
 };
 

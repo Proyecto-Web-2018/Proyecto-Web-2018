@@ -9,19 +9,40 @@ module.exports = {
 
   attributes: {
 
-    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
-    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
-    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+    nombres: {
+      type: 'string',
+      required: true
+    },
+    apellidos: {
+      type: 'string',
+      required: true
+    },
+    fechaNacimiento: {
+      type: 'string',
+      required: true
+    },
+    numeroPeliculas: {
+      type: 'number',
+      required: true
+    },
+    retirado: {
+      type: 'boolean',
+      required: true
+    },
+    foto: {
+      type: 'string',
+      required: true
+    },
 
+    peliculas:{
+      collection: 'Peliculas',
+      via: 'actores'
+    },
 
-    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
-    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
-    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
-
-
-    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
-    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
-    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+    capitulos:{
+      collection: 'Capitulo',
+      via: 'actores'
+    }
 
   },
 
