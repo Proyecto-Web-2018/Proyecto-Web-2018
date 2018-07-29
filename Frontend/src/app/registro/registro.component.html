@@ -1,0 +1,83 @@
+<div class="row" style="padding-top: 5rem">
+
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+
+    <h2 style="text-align: center">Registrarse</h2>
+    <br>
+    <form #formularioRegistro="ngForm">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text"
+                 class="form-control"
+                 id="inputAddress"
+                 placeholder="Nombre"
+                 [(ngModel)]="nombre"
+                 name="nombre"
+                 required minlength="4"
+                 #nombreInput="ngModel">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text"
+                 class="form-control"
+                 id="inputAddress2"
+                 placeholder="Apellido"
+                 [(ngModel)]="apellido"
+                 name="apellido"
+                 required minlength="4"
+                 #apellidoInput="ngModel">
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="email"
+               class="form-control"
+               id="inputUsername"
+               placeholder="Username"
+               [(ngModel)]="username"
+               name="username"
+               required minlength="4"
+               #usernameInput="ngModel">
+      </div>
+      <div class="form-group">
+        <input type="email"
+               class="form-control"
+               id="inputEmail4"
+               placeholder="Email"
+               aria-describedby="emailHelp"
+               [(ngModel)]="email"
+               name="email"
+               required
+               pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+               #emailInput="ngModel">
+      </div>
+      <div class="form-group">
+        <input type="password"
+               class="form-control"
+               id="inputPassword4"
+               placeholder="Password"
+               pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+               [(ngModel)]="password"
+               name="password"
+               required
+               #passwordInput="ngModel">
+        <small id="emailHelp" class="form-text text-muted">Contraseña debe contener minúsculas, mayúsculas, números y mínimo 8 caracteres</small>
+      </div>
+      <div class="form-group">
+        <input type="password"
+               class="form-control"
+               id="inputConfirmPassword4"
+               placeholder="Confirmar Password"
+               pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+               [(ngModel)]="passwordConfirmation"
+               name="passwordConfirmation"
+               required
+               #passwordConfirmationInput="ngModel">
+      </div>
+      <button [disabled]="formularioRegistro.invalid" (click)="ingresarUsuario(formularioRegistro)" class="btn btn-primary">Sign in</button>
+    </form>
+
+  </div>
+  <div class="col-sm-4"></div>
+
+</div>
+

@@ -9,12 +9,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RUTAS} from './app.rutas';
 import {RouterModule} from '@angular/router';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
