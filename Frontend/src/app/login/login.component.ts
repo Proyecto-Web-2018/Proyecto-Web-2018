@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as Cookies from 'js-cookie';
-import {HttpClient} from "@angular/common/http";
-import {CredencialesService} from "../Servicios/credenciales.service";
-import {Router} from "@angular/router";
+import {HttpClient} from '@angular/common/http';
+import {CredencialesService} from '../credenciales.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',

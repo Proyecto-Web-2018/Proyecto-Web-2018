@@ -41,7 +41,7 @@ module.exports = {
     },
 
     listaSeries:{
-      collection: 'ListaReproduccionSeries',
+      collection: 'ListaSeries',
         via: 'series'
     }
 

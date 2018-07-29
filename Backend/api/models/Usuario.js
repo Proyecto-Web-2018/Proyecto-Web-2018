@@ -29,12 +29,12 @@ module.exports = {
     },
 
     listasPeliculas:{
-      collection: 'ListaReproduccionPeliculas',
+      collection: 'ListaPeliculas',
       via: 'usuario'
     },
 
     listasSeries:{
-      collection: 'ListaReproduccionSeries',
+      collection: 'ListaSeries',
       via: 'usuario'
     }
 

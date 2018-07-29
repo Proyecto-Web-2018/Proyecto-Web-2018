@@ -19,7 +19,8 @@ export class CredencialesService {
 
   }
 
-  cookies(){
+  cookies() {
     this.estaLogeado = true;
   }
+
 }

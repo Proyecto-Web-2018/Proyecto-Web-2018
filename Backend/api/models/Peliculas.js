@@ -39,7 +39,7 @@ module.exports = {
     },
 
     listaReproduccion:{
-      collection: 'ListaReproduccionPeliculas',
+      collection: 'ListaPeliculas',
       via: 'peliculas'
     },
 
