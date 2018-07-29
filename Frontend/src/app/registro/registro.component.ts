@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -15,7 +16,7 @@ export class RegistroComponent implements OnInit {
   password;
   passwordConfirmation;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private _router: Router) { }
 
   ngOnInit() {
   }
@@ -42,6 +43,9 @@ export class RegistroComponent implements OnInit {
         err => {
           console.log('Error occured');
         });
+
+      const rutaLogin = ['/login'];
+      this._router.navigate(rutaLogin);
 
     } else {
       alert('Los passwords no son iguales');
