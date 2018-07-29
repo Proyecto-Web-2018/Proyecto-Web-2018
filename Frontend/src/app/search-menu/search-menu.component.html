@@ -1,7 +1,71 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" style="color: white">Navbar</a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav>
+<div class="row">
+
+  <div class="col-sm-12">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <h3 style="color: white">Navbar</h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 1rem">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <button type="button" (click)="validarCookie()" class="btn btn-link" style="color: white; padding-top: 6px">
+              Home
+            </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Peliculas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Series</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              Generos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Accion</a>
+              <a class="dropdown-item" href="#">Terror</a>
+              <a class="dropdown-item" href="#">Sci-fi</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Todos</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" style="padding-right: 3rem">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+          <div class="btn-group" role="group" style="padding-left: 1rem">
+            <button id="btnGroupDrop1"
+                    type="button"
+                    class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false" style="background-color: #343a40">
+              {{username}}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">Lista Peliculas</a>
+              <a class="dropdown-item" href="#">Lista Series</a>
+              <a class="dropdown-item" href="#">Configuraciones</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+
+        </form>
+
+
+
+      </div>
+    </nav>
+
+  </div>
+
+
+</div>
