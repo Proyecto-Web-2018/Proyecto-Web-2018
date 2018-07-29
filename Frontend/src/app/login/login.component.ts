@@ -57,4 +57,8 @@ export class LoginComponent implements OnInit {
 
   }
 
+  getUrl() {
+    return 'url(\'https://i.ytimg.com/vi/nxv3_NnFqiY/maxresdefault.jpg\')';
+  }
+
 }

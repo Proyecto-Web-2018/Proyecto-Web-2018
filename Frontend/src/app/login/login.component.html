@@ -1,20 +1,29 @@
+<div [ngStyle]="{'background-image': getUrl()}" style="background-size: 90rem 50rem; background-repeat: no-repeat">
 <div class="row" style="padding-top: 200px">
 
   <div class="col-sm-4"></div>
-  <div class="col-sm-4">
-    <form>
+  <div class="col-sm-4" style="padding-left: 5rem">
+    <h2 style="padding-left: 7rem; color: white">Login</h2>
+    <form style="height: 20rem; width: 20rem; padding-top: 1rem">
       <div class="form-group">
-        <label for="exampleInputEmail1">Username</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" (keyup)="onNameKeyUpUsername($event)" aria-describedby="emailHelp">
+        <!--<label for="exampleInputEmail1" style="color: white">Username</label>-->
+        <input type="text" class="form-control" id="exampleInputEmail1" (keyup)="onNameKeyUpUsername($event)" aria-describedby="emailHelp" placeholder="Username">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" (keyup)="onNameKeyUpPassword($event)">
+        <!--<label for="exampleInputPassword1" style="color: white">Password</label>-->
+        <input type="password" class="form-control" id="exampleInputPassword1" (keyup)="onNameKeyUpPassword($event)" placeholder="Password">
       </div>
-      <button type="submit" (click)="getProfile()" class="btn btn-primary">Login</button>
+
+      <div style="padding-top: 1rem"><button type="submit" (click)="getProfile()" class="btn btn-primary">Login</button></div>
+      <div><button type="button" class="btn btn-link" style="padding-top: 1rem; padding-left: 0rem">Registrarse</button></div>
+
 
     </form>
   </div>
   <div class="col-sm-4"></div>
+
+  <div class="col-sm-12" style="padding-top: 8rem"></div>
+
+</div>
 
 </div>
