@@ -10,13 +10,15 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RUTAS} from './app.rutas';
 import {RouterModule} from '@angular/router';
 import { RegistroComponent } from './registro/registro.component';
+import { SearchMenuComponent } from './search-menu/search-menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    RegistroComponent
+    RegistroComponent,
+    SearchMenuComponent
   ],
   imports: [
     BrowserModule,
