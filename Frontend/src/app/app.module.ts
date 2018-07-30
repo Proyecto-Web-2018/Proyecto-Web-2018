@@ -13,6 +13,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { SearchMenuComponent } from './search-menu/search-menu.component';
 import { ReproductorComponent } from './reproductor/reproductor.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PeliculasComponent } from './peliculas/peliculas.component';
+import { SeriesComponent } from './series/series.component';
+import { GenerosComponent } from './generos/generos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     RegistroComponent,
     SearchMenuComponent,
     ReproductorComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PeliculasComponent,
+    SeriesComponent,
+    GenerosComponent
   ],
   imports: [
     BrowserModule,

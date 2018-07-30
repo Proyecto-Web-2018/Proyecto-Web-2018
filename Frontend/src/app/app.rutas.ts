@@ -5,6 +5,9 @@ import {LoginComponent} from './login/login.component';
 import {RegistroComponent} from './registro/registro.component';
 import {ReproductorComponent} from './reproductor/reproductor.component';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {PeliculasComponent} from './peliculas/peliculas.component';
+import {SeriesComponent} from './series/series.component';
+import {GenerosComponent} from './generos/generos.component';
 
 export const RUTAS: Routes = [
 
@@ -28,6 +31,18 @@ export const RUTAS: Routes = [
   {
     path: 'registro',
     component: RegistroComponent
+  },
+  {
+    path: 'peliculas',
+    component: PeliculasComponent
+  },
+  {
+    path: 'series',
+    component: SeriesComponent
+  },
+  {
+    path: 'generos',
+    component: GenerosComponent
   },
   {
     path: '**',
