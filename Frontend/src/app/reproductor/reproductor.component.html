@@ -6,12 +6,12 @@
 
   <div class="col-sm-8" style="background-color: black">
     <iframe width="800" height="500" [src]='sanitizer.bypassSecurityTrustResourceUrl(url)' frameborder="0"
-            allowfullscreen style="padding-left: 1rem"></iframe>
+            allowfullscreen style="padding-left: 1rem;padding-top: 5rem"></iframe>
 
   </div>
   <div class="col-sm-4" style="background-color: black">
 
-    <div style="padding-top: 3rem; color: white">
+    <div style="padding-top: 8rem; color: white">
       <div>
         <h3>Titulo:  {{titulo}}</h3>
       </div>
@@ -29,4 +29,7 @@
       <div><span>Sinopsis:  {{sinopsis}}</span></div>
     </div>
   </div>
+
+  <div class="col-sm-12" style="background-color: black; height: 5rem"></div>
+
 </div>
