@@ -3,6 +3,8 @@ import {HomeComponent} from './home/home.component';
 import {AutorizacionService} from './autorizacion.service';
 import {LoginComponent} from './login/login.component';
 import {RegistroComponent} from './registro/registro.component';
+import {ReproductorComponent} from './reproductor/reproductor.component';
+import {NotFoundComponent} from './not-found/not-found.component';
 
 export const RUTAS: Routes = [
 
@@ -12,8 +14,16 @@ export const RUTAS: Routes = [
     canActivate: [AutorizacionService],
   },
   {
+    path: 'error',
+    component: NotFoundComponent
+  },
+  {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'reproducir',
+    component: ReproductorComponent
   },
   {
     path: 'registro',
@@ -21,7 +31,7 @@ export const RUTAS: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'login',
+    redirectTo: 'error',
     pathMatch: 'full',
   }
 ];

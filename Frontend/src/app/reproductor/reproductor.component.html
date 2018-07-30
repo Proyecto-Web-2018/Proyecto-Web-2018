@@ -1,0 +1,32 @@
+<div class="row">
+
+  <div class="col-sm-12">
+    <app-search-menu></app-search-menu>
+  </div>
+
+  <div class="col-sm-8" style="background-color: black">
+    <iframe width="800" height="500" [src]='sanitizer.bypassSecurityTrustResourceUrl(url)' frameborder="0"
+            allowfullscreen style="padding-left: 1rem"></iframe>
+
+  </div>
+  <div class="col-sm-4" style="background-color: black">
+
+    <div style="padding-top: 3rem; color: white">
+      <div>
+        <h3>Titulo:  {{titulo}}</h3>
+      </div>
+      <br>
+      <div>
+        <span>Duracion:  {{duracion}}</span>
+      </div>
+      <br>
+      <div><span>Actores:  {{actores}}</span></div>
+      <br>
+      <div><span>Genero:  {{genero}}</span></div>
+      <br>
+      <div><span>Raiting:  {{raiting}}</span></div>
+      <br>
+      <div><span>Sinopsis:  {{sinopsis}}</span></div>
+    </div>
+  </div>
+</div>

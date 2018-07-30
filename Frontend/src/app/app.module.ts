@@ -11,6 +11,8 @@ import {RUTAS} from './app.rutas';
 import {RouterModule} from '@angular/router';
 import { RegistroComponent } from './registro/registro.component';
 import { SearchMenuComponent } from './search-menu/search-menu.component';
+import { ReproductorComponent } from './reproductor/reproductor.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SearchMenuComponent } from './search-menu/search-menu.component';
     LoginComponent,
     HomeComponent,
     RegistroComponent,
-    SearchMenuComponent
+    SearchMenuComponent,
+    ReproductorComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
