@@ -12,9 +12,9 @@ import {GenerosComponent} from './generos/generos.component';
 export const RUTAS: Routes = [
 
   {
-    path: 'usuario/:id/home',
-    component: HomeComponent,
-    canActivate: [AutorizacionService],
+    path: 'home',
+    component: HomeComponent
+    //canActivate: [AutorizacionService],
   },
   {
     path: 'error',

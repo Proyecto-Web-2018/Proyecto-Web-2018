@@ -16,6 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { PeliculasComponent } from './peliculas/peliculas.component';
 import { SeriesComponent } from './series/series.component';
 import { GenerosComponent } from './generos/generos.component';
+import { PeliculasRecientesComponent } from './home/peliculas-recientes/peliculas-recientes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { GenerosComponent } from './generos/generos.component';
     NotFoundComponent,
     PeliculasComponent,
     SeriesComponent,
-    GenerosComponent
+    GenerosComponent,
+    PeliculasRecientesComponent
   ],
   imports: [
     BrowserModule,

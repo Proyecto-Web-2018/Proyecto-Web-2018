@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class SearchMenuComponent implements OnInit {
 
-  username = Cookies.getJSON('cookieWeb').username;
+  //username = Cookies.getJSON('cookieWeb').username;
 
   constructor(private _credenciales: CredencialesService, private _router: Router) { }
 

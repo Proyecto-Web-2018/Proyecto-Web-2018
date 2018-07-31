@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   constructor(private _credenciales: CredencialesService, private _router: Router) { }
 
   ngOnInit() {
-    this.validarCookie();
+    //this.validarCookie();
   }
 
   validarCookie() {
