@@ -15,28 +15,47 @@
             <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleControls" data-slide-to="1"></li>
             <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            <li data-target="#carouselExampleControls" data-slide-to="3"></li>
           </ol>
-          <div class="carousel-inner">
+          <div class="carousel-inner hvr-grow">
 
-            <div *ngFor="let pelicula of peliculas; let i=index">
-              
-              <div class="carousel-item active" *ngIf="i==0">
-                <div class="row">
-                  <div class="col-lg-12 col-xs-12 col-sm-12">
-                    <img class="d-block w-100" [src]="pelicula.uri" alt="First slide" >
-                  </div>
+            <div class="carousel-item active hv" >
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-lg-8 col-xs-8 col-sm-8">
+                  <img class="d-block w-100" (click)="redirect()" [src]="peliculas[0].uri" alt="First slide" >
                 </div>
+                <div class="col-sm-2"></div>
               </div>
-              <div class="carousel-item" *ngIf="i>0">
-                <div class="row">
-                  <div class="col-lg-12 col-xs-12 col-sm-12">
-                    <img class="d-block w-100" [src]="pelicula.uri" alt="First slide" >
-                  </div>
-                </div>
-              </div>
-
-
             </div>
+            <div class="carousel-item " >
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-lg-8 col-xs-8 col-sm-8">
+                  <img class="d-block w-100" [src]="peliculas[1].uri" alt="First slide" >
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+            </div>
+            <div class="carousel-item " >
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-lg-8 col-xs-8 col-sm-8">
+                  <img class="d-block w-100" [src]="peliculas[2].uri" alt="First slide" >
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+            </div>
+            <div class="carousel-item " >
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-lg-8 col-xs-8 col-sm-8">
+                  <img class="d-block w-100" [src]="peliculas[3].uri" alt="First slide" >
+                </div>
+                <div class="col-sm-2"></div>
+              </div>
+            </div>
+
 
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

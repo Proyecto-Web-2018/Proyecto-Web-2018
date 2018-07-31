@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-peliculas-recientes',
@@ -7,22 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeliculasRecientesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router) { }
 
   peliculas=[
     {
-      uri:"https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/03/29/Recortada/img_jatienza_20170829-164347_imagenes_lv_otras_fuentes_20838254_109613609733414_4388983623303299072_n-kkYE-U442025183055F3H-992x558@LaVanguardia-Web.jpg",
+      uri:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1200px-Breaking_Bad_logo.svg.png",
     },
     {
-      uri:"https://www.hola.com/imagenes/realeza/casa_suecia/20180723127477/magdalena-suecia-inusual-foto-leonore/0-586-859/leonore-suecia-cp-9t-t.jpg",
+      uri:"https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png",
     },
     {
-      uri:"https://www.lavanguardia.com/r/GODO/LV/p5/WebSite/2018/03/29/Recortada/img_jatienza_20170829-164347_imagenes_lv_otras_fuentes_20838254_109613609733414_4388983623303299072_n-kkYE-U442025183055F3H-992x558@LaVanguardia-Web.jpg",
+      uri:"https://i0.wp.com/freakelitex.com/wp-content/uploads/2017/11/maxresdefault-8.jpg?fit=1920%2C1080",
+    },
+    {
+      uri:"http://www.proyectorfantasma.com.ar/wp-content/uploads/2014/06/VUELVE-BREAKING-BAD-810x456.jpeg",
     },
   ];
 
 
   ngOnInit() {
   }
-
+  redirect(){
+    const rutaReproductor= ['reproducir'];
+    this._router.navigate(rutaReproductor)
+  }
 }
