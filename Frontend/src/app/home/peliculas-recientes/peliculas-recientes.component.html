@@ -17,49 +17,25 @@
             <li data-target="#carouselExampleControls" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="https://apter-fredericks.com/wp-content/uploads/2015/06/masterpiece-1400-x-600.gif"alt="First slide" >
-                </div>
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="https://apter-fredericks.com/wp-content/uploads/2015/06/masterpiece-1400-x-600.gif" alt="First slide">
-                </div>
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="https://apter-fredericks.com/wp-content/uploads/2015/06/masterpiece-1400-x-600.gif" alt="First slide">
-                </div>
 
+            <div *ngFor="let pelicula of peliculas; let i=index">
+              
+              <div class="carousel-item active" *ngIf="i==0">
+                <div class="row">
+                  <div class="col-lg-12 col-xs-12 col-sm-12">
+                    <img class="d-block w-100" [src]="pelicula.uri" alt="First slide" >
+                  </div>
+                </div>
               </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="http://www.hotel-erfoud-riad.com/images/resized/images/hrm/activites/desert-erfoud_1400_600.jpg" alt="Two slide">
+              <div class="carousel-item" *ngIf="i>0">
+                <div class="row">
+                  <div class="col-lg-12 col-xs-12 col-sm-12">
+                    <img class="d-block w-100" [src]="pelicula.uri" alt="First slide" >
+                  </div>
                 </div>
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="http://www.hotel-erfoud-riad.com/images/resized/images/hrm/activites/desert-erfoud_1400_600.jpg" alt="Two slide">
-                </div>
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="http://www.hotel-erfoud-riad.com/images/resized/images/hrm/activites/desert-erfoud_1400_600.jpg" alt="Two slide">
-                </div>
-
               </div>
-            </div>
 
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="https://www.themepunch.com/home/wp-content/uploads/2014/07/unlimited_height_5.jpg" alt="Three slide">
-                </div>
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="https://www.themepunch.com/home/wp-content/uploads/2014/07/unlimited_height_5.jpg" alt="Three slide">
-                </div>
-                <div class="col-lg-4 col-xs-4 col-sm-4">
-                  <img class="d-block w-100" src="https://www.themepunch.com/home/wp-content/uploads/2014/07/unlimited_height_5.jpg" alt="Three slide">
-                </div>
 
-              </div>
             </div>
 
           </div>
