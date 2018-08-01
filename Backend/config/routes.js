@@ -16,5 +16,7 @@ module.exports.routes = {
 
   'GET /buscarPeliculaTodo/:parametros': 'ControladorController.buscarPeliculaTodo',
 
+  'GET /cuatroPeliculas': 'ControladorController.buscarCuatroPeliculas',
+
 
 };

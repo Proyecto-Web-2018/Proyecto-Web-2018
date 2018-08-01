@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-peliculas-recientes',
@@ -8,11 +9,16 @@ import {Router} from "@angular/router";
 })
 export class PeliculasRecientesComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+  arregloPeliculas = [];
+
+  arregloImagenes = [];
+
+  constructor(private _router: Router, private httpClient: HttpClient) { }
 
   peliculas=[
     {
       uri:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1200px-Breaking_Bad_logo.svg.png",
+
     },
     {
       uri:"https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png",
@@ -26,10 +32,31 @@ export class PeliculasRecientesComponent implements OnInit {
   ];
 
 
+
   ngOnInit() {
+    this.getPeliculas()
+
   }
+
   redirect(){
     const rutaReproductor= ['reproducir'];
     this._router.navigate(rutaReproductor)
+  }
+
+  getPeliculas(){
+
+    this.httpClient.get(`http://localhost:1337/cuatroPeliculas`).subscribe((data: any[]) => {
+        this.arregloPeliculas = data;
+        console.log(this.arregloPeliculas)
+        const arreglo = [];
+        this.arregloPeliculas.forEach(function (item) {
+          arreglo.push(item.imagen);
+          console.log(item.imagen)
+        })
+        this.arregloImagenes = arreglo
+      }
+    );
+
+
   }
 }

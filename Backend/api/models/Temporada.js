@@ -9,7 +9,7 @@ module.exports = {
 
   attributes: {
 
-    rating: {
+    numero: {
       type: 'string',
       required: true
     },

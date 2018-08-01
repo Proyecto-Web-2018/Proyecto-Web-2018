@@ -16,6 +16,18 @@ module.exports = {
 
   },
 
+  buscarCuatroPeliculas: function (req, res) {
+
+    var query = "SELECT * FROM Peliculas limit 0,4";
+    Peliculas.getDatastore().sendNativeQuery(query,function(err, rawResult) {
+      if (err) { return res.serverError(err); }
+
+      return res.json(rawResult.rows);
+
+    });
+
+  },
+
 
 };
 

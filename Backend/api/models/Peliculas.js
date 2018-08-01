@@ -23,6 +23,7 @@ module.exports = {
     },
     sinopsis: {
       type: 'string',
+      columnType: 'text',
       required: true
     },
     imagen: {

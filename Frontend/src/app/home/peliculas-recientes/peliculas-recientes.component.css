@@ -18,3 +18,13 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.imgResponsive {
+  width: 100%;
+}
+
+.imgResponsive, .thumbnail>img, .thumbnail a>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
