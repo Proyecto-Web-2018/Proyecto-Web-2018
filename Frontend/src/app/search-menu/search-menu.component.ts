@@ -17,6 +17,18 @@ export class SearchMenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  redirectPeliculas(){
+    this._router.navigate(['peliculas'])
+  }
+
+  redirectSeries(){
+    this._router.navigate(['series'])
+  }
+
+  redirectHome(){
+    this._router.navigate(['home'])
+  }
+
   validarCookie() {
     const json = Cookies.getJSON('cookieWeb');
     if (json.estado === 'true') {

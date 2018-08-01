@@ -11,7 +11,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 1rem">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <button type="button" (click)="validarCookie()" class="btn btn-link" style="color: white; padding-top: 6px">
+            <button type="button" (click)="redirectHome()" class="btn btn-link" style="color: white; padding-top: 6px">
               Home
             </button>
           </li>
@@ -50,8 +50,8 @@
               {{username}}
             </button>
             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <a class="dropdown-item" href="#">Lista Peliculas</a>
-              <a class="dropdown-item" href="#">Lista Series</a>
+              <a class="dropdown-item" (click)="redirectPeliculas()">Lista Peliculas</a>
+              <a class="dropdown-item" (click)="redirectSeries()">Lista Series</a>
               <a class="dropdown-item" href="#">Configuraciones</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="´#login">Logout</a>
