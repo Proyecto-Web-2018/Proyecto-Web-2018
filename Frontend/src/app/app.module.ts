@@ -18,6 +18,7 @@ import { SeriesComponent } from './series/series.component';
 import { GenerosComponent } from './generos/generos.component';
 import { PeliculasRecientesComponent } from './home/peliculas-recientes/peliculas-recientes.component';
 import { SeriesRecientesComponent } from './home/series-recientes/series-recientes.component';
+import { ListaCapitulosComponent } from './series/lista-capitulos/lista-capitulos.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SeriesRecientesComponent } from './home/series-recientes/series-recient
     SeriesComponent,
     GenerosComponent,
     PeliculasRecientesComponent,
-    SeriesRecientesComponent
+    SeriesRecientesComponent,
+    ListaCapitulosComponent
   ],
   imports: [
     BrowserModule,

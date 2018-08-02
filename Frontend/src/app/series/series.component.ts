@@ -75,7 +75,7 @@ export class SeriesComponent implements OnInit {
   ];
 
   redirect(){
-    const rutaReproductor= ['listaSerie'];
+    const rutaReproductor= ['capitulos'];
     this._router.navigate(rutaReproductor)
   }
 

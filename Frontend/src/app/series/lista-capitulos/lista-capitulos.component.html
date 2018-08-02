@@ -1,0 +1,53 @@
+<app-search-menu></app-search-menu>
+<div class="black-bgr">
+  <div class="row">
+    <div class="col-sm-8" style="background-color: black">
+      <iframe width="800" height="500" [src]='sanitizer.bypassSecurityTrustResourceUrl("https://www.fembed.com/v/4d9jqzx2yv1")' frameborder="0"
+              allowfullscreen style="padding-left: 3rem;padding-top: 5rem"></iframe>
+
+    </div>
+    <div class="col-sm-4" style="background-color: black">
+
+      <div style="padding-top: 8rem; color: white">
+        <div>
+          <h3>Titulo Serie:  {{titulo}}</h3>
+        </div>
+        <br>
+        <div>
+          <span>Duracion:  {{duracion}}</span>
+        </div>
+        <br>
+        <div><span>Actores:  {{actores}}</span></div>
+        <br>
+        <div><span>Genero:  {{genero}}</span></div>
+        <br>
+        <div><span>Raiting:  {{raiting}}</span></div>
+        <br>
+        <div><span>Sinopsis:  {{sinopsis}}</span></div>
+      </div>
+    </div>
+
+    <div class="col-sm-12" style="background-color: black; height: 5rem"></div>
+  </div>
+
+  <div *ngFor="let lista of listaTemporadas">
+    <div class="row mt-4">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <h1 align="center"> {{lista.titulo}}</h1>
+        <img [src]="lista.img" class="img-fluid rounded mx-auto d-block"  alt="">
+      </div>
+      <div class="col-sm-1"> </div>
+      <div  class="col-sm-5">
+        <div *ngFor="let l of lista.capitulos; let i=index" >
+          <div class="row hvr-grow">
+            <h4 (click)="redirect()" >{{lista.capitulos[i]}}</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"> </div>
+
+
+    </div>
+  </div>
+</div>
