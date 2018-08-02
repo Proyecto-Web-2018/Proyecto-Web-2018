@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
 })
 export class SeriesRecientesComponent implements OnInit {
 
-  constructor(private _router: Router,) { }
+  constructor(private _router: Router) { }
 
   redirect(){
     const rutaReproductor= ['reproducir'];
