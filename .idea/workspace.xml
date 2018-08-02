@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f52b06a-f71e-4c62-a637-1768200894d1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.rutas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.rutas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/series/series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/series/series.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/series/series.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/series/series.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="3f52b06a-f71e-4c62-a637-1768200894d1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -42,8 +35,8 @@
       <file leaf-file-name="search-menu.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+            <state relative-caret-position="134">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -273,16 +266,15 @@
       <updated>1532660447556</updated>
       <workItem from="1532660456967" duration="621000" />
       <workItem from="1532661099287" duration="2236000" />
-      <workItem from="1533060120838" duration="31103000" />
+      <workItem from="1533060120838" duration="31152000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33960000" />
+    <option name="totallyTimeSpent" value="34009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
@@ -633,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="32" column="67" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        <state relative-caret-position="134">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
