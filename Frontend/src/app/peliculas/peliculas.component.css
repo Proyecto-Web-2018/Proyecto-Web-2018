@@ -23,6 +23,14 @@
   transition-property: transform;
 
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
