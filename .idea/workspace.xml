@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3f52b06a-f71e-4c62-a637-1768200894d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/home/peliculas-recientes/peliculas-recientes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/home/peliculas-recientes/peliculas-recientes.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,20 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="peliculas.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html">
+      <file leaf-file-name="peliculas.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="205">
+              <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="peliculas.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.ts">
+      <file leaf-file-name="peliculas.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
+            <state relative-caret-position="156">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -208,12 +202,12 @@
       <updated>1532660447556</updated>
       <workItem from="1532660456967" duration="621000" />
       <workItem from="1532661099287" duration="2236000" />
-      <workItem from="1533060120838" duration="17843000" />
+      <workItem from="1533060120838" duration="20640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20700000" />
+    <option name="totallyTimeSpent" value="23497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -499,15 +493,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="38" column="85" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="85" />
+        <state relative-caret-position="205">
+          <caret line="74" column="6" selection-start-line="74" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="156">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>

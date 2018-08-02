@@ -1,8 +1,15 @@
 <app-search-menu></app-search-menu>
-<div class="row"> <h1 class="col-sm-12">Películas</h1></div>
 <div class="row">
-  <div class="col-sm-1"></div>
-  <div class=""></div>
-  <div class="col-sm-1"></div>
-
+  <div class="col-sm-12"> <h1>Películas</h1></div>
+</div>
+<div *ngFor="let pelicula of arregloPeliculas; let i=index">
+  <div *ngIf="i%4==0">
+    <div  class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2">
+        <img [src]="pelicula[i].img" class="img-fluid" alt="{{i}}">
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
 </div>
