@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3f52b06a-f71e-4c62-a637-1768200894d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/series/series.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/series/series.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/series/series.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/series/series.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/series/series.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/series/series.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="series.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.ts">
+      <file leaf-file-name="generos.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+            <state relative-caret-position="52">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generos.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -33,11 +40,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="series.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.html">
+      <file leaf-file-name="app.rutas.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.rutas.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="383">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,7 +78,6 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/reproductor/reproductor.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/app.rutas.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/reproductor/reproductor.component.html" />
-        <option value="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.css" />
         <option value="$PROJECT_DIR$/Frontend/src/app/home/peliculas-recientes/peliculas-recientes.component.css" />
         <option value="$PROJECT_DIR$/Frontend/src/app/home/home.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/home/peliculas-recientes/peliculas-recientes.component.ts" />
@@ -81,11 +90,14 @@
         <option value="$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/home/series-recientes/series-recientes.component.ts" />
         <option value="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.ts" />
-        <option value="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.css" />
         <option value="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/series/series.component.css" />
         <option value="$PROJECT_DIR$/Frontend/src/app/series/series.component.html" />
         <option value="$PROJECT_DIR$/Frontend/src/app/series/series.component.ts" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.css" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.css" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.html" />
+        <option value="$PROJECT_DIR$/Frontend/src/app/generos/generos.component.ts" />
       </list>
     </option>
   </component>
@@ -147,15 +159,7 @@
               <item name="Frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Proyecto-Web-2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Proyecto-Web-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="series" type="462c0819:PsiDirectoryNode" />
+              <item name="generos" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -204,12 +208,12 @@
       <updated>1532660447556</updated>
       <workItem from="1532660456967" duration="621000" />
       <workItem from="1532661099287" duration="2236000" />
-      <workItem from="1533060120838" duration="25237000" />
+      <workItem from="1533060120838" duration="27557000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28094000" />
+    <option name="totallyTimeSpent" value="30414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -321,16 +325,6 @@
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/not-found/not-found.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-158">
@@ -344,9 +338,6 @@
           <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.ts">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -415,16 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.rutas.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/search-menu/search-menu.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -486,17 +467,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="26" column="9" lean-forward="true" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -517,17 +508,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.html">
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="201">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/series/series.component.ts">
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/peliculas/peliculas.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        <state relative-caret-position="234">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.rutas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/generos/generos.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
