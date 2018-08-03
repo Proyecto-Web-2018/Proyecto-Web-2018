@@ -18,7 +18,7 @@ module.exports = {
 
   buscarCuatroPeliculas: function (req, res) {
 
-    var query = "SELECT * FROM Peliculas limit 0,4";
+    var query = "SELECT * FROM peliculas limit 0,4";
     Peliculas.getDatastore().sendNativeQuery(query,function(err, rawResult) {
       if (err) { return res.serverError(err); }
 

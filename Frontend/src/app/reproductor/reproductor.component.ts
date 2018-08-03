@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
-import {DataService} from "../servicios/data.service";
-import {ActivatedRoute} from "@angular/router";
-import {HttpClient} from "@angular/common/http";
+import {ActivatedRoute} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-reproductor',

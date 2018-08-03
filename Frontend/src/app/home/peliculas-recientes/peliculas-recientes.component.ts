@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from "@angular/router";
-import {HttpClient} from "@angular/common/http";
-import {DataService} from "../../servicios/data.service";
+import {Router} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
+import {DataService} from '../../servicios/data.service';
 
 @Component({
   selector: 'app-peliculas-recientes',
@@ -19,14 +19,14 @@ export class PeliculasRecientesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getPeliculas()
+    this.getPeliculas();
   }
 
   redirect(numero: number) {
 
     const id = this.arregloIds[numero];
-    const rutaReproductor = ['/reproducir',id];
-    this._router.navigate(rutaReproductor)
+    const rutaReproductor = ['/reproducir', id];
+    this._router.navigate(rutaReproductor);
     console.log(id);
   }
 
@@ -34,14 +34,14 @@ export class PeliculasRecientesComponent implements OnInit {
 
     this.httpClient.get(`http://localhost:1337/cuatroPeliculas`).subscribe((data: any[]) => {
         this.arregloPeliculas = data;
-        console.log(this.arregloPeliculas)
+        console.log(this.arregloPeliculas);
         const arreglo = [];
         const arregloide = [];
         this.arregloPeliculas.forEach(function (item) {
           arreglo.push(item.imagen);
           arregloide.push(item.id);
-          //console.log(item.imagen)
-        })
+          // console.log(item.imagen)
+        });
         this.arregloImagenes = arreglo;
         this.arregloIds = arregloide;
       }
