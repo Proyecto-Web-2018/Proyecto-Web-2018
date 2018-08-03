@@ -11,19 +11,19 @@
       <div class="col-lg-1"></div>
       <div class="col-lg-10 col-xs-12 col-sm-12">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
+          <!--<ol class="carousel-indicators">
             <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleControls" data-slide-to="1"></li>
             <li data-target="#carouselExampleControls" data-slide-to="2"></li>
             <li data-target="#carouselExampleControls" data-slide-to="3"></li>
-          </ol>
-          <div class="carousel-inner hvr-grow">
+          </ol>-->
+          <div class="carousel-inner hvr-grow" >
 
-           <div class="carousel-item active hv" >
+           <div class="carousel-item active hv">
               <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-lg-8 col-xs-8 col-sm-8">
-                  <img class="d-block w-100" (click)="redirect()" [src]="arregloImagenes[0]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
+                  <img class="d-block w-100"  (click)="redirect(0)" [src]="arregloImagenes[0]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
                 </div>
                 <div class="col-sm-2"></div>
               </div>
@@ -32,7 +32,7 @@
               <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-lg-8 col-xs-8 col-sm-8">
-                  <img class="d-block w-100" [src]="arregloImagenes[1]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
+                  <img class="d-block w-100"  (click)="redirect(1)" [src]="arregloImagenes[1]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
                 </div>
                 <div class="col-sm-2"></div>
               </div>
@@ -41,7 +41,7 @@
               <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-lg-8 col-xs-8 col-sm-8">
-                  <img class="d-block w-100" [src]="arregloImagenes[2]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
+                  <img class="d-block w-100" (click)="redirect(2)" [src]="arregloImagenes[2]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
                 </div>
                 <div class="col-sm-2"></div>
               </div>
@@ -50,7 +50,7 @@
               <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-lg-8 col-xs-8 col-sm-8">
-                  <img class="d-block w-100" [src]="arregloImagenes[3]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
+                  <img class="d-block w-100" (click)="redirect(3)" [src]="arregloImagenes[3]" alt="First slide" style="max-width: 25rem; padding-left: 10rem">
                 </div>
                 <div class="col-sm-2"></div>
               </div>

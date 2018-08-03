@@ -26,7 +26,7 @@ export const RUTAS: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'reproducir',
+    path: 'reproducir/:id',
     component: ReproductorComponent
   },
   {

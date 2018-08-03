@@ -10,10 +10,10 @@ export class SeriesRecientesComponent implements OnInit {
 
   constructor(private _router: Router) { }
 
-  redirect(){
+  /*redirect(){
     const rutaReproductor= ['reproducir'];
     this._router.navigate(rutaReproductor)
-  }
+  }*/
 
   ngOnInit() {
   }
