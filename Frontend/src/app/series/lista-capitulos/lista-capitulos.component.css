@@ -35,9 +35,9 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   border-style: solid;
-  border-color: #ff5f33;
-  border-width: 3px;
-  border-radius: 5%;
+  border-color: #f8fffd;
+  border-width: 1px;
+  color: #ff0000;
 }
 
 .imgResponsive {

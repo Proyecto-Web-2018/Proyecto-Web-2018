@@ -1,3 +1,33 @@
-<p>
-  series works!
-</p>
+<app-search-menu></app-search-menu>
+<div class="black-bgr">
+  <div class="row">
+    <div class="col-sm-12"> <h1>Series</h1></div>
+  </div>
+  <div *ngFor=" let serie of arregloSeries;let i=index">
+    <div *ngIf="i%4==0">
+      <div  class="row mt-2">
+        <div class="col-sm-2"></div>
+        <div class=" col-sm-10">
+          <div class="row">
+            <div class="col-sm-2 hvr-grow white_brd " (click)="redirect()">
+              <img [src]="arregloSeries[i].img"  class="img-fluid "  alt="{{i}}">
+            </div>
+            <div class="col-sm-1" ></div>
+            <div class="col-sm-2 hvr-grow white_brd " (click)="redirect()">
+              <img [src]="arregloSeries[i+1].img"  class="img-fluid " alt="{{i}}">
+            </div>
+            <div class="col-sm-1" ></div>
+            <div class="col-sm-2 hvr-grow white_brd " (click)="redirect()">
+              <img [src]="arregloSeries[i+2].img" class="img-fluid " alt="{{i}}">
+            </div>
+            <div class="col-sm-1" ></div>
+            <div class="col-sm-2 hvr-grow white_brd " (click)="redirect()">
+              <img [src]="arregloSeries[i+3].img" class="img-fluid " alt="{{i}}">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-1"></div>
+      </div>
+    </div>
+  </div>
+</div>
