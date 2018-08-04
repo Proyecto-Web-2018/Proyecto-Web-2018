@@ -15,7 +15,7 @@ export class PeliculasComponent implements OnInit {
                private httpClient: HttpClient) { }
 
   redirect(id) {
-    const rutaReproductor = ['/reproducir', id];
+    const rutaReproductor = ['/reproducir','pelicula', id];
     this._router.navigate(rutaReproductor);
   }
 

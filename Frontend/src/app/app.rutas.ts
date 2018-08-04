@@ -26,8 +26,17 @@ export const RUTAS: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'reproducir/:id',
-    component: ReproductorComponent
+    path: 'reproducir',
+    children: [
+      {
+        path: 'pelicula/:id',
+        component: ReproductorComponent
+      },
+      {
+        path: 'capitulo/:id',
+        component: ReproductorComponent
+      }
+    ]
   },
   {
     path: 'registro',
@@ -46,7 +55,7 @@ export const RUTAS: Routes = [
     component: GenerosComponent
   },
   {
-    path: 'capitulos',
+    path: 'serie/:id',
     component: ListaCapitulosComponent
   },
   {

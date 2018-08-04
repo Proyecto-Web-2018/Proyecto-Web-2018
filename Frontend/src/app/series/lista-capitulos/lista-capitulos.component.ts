@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DomSanitizer} from "@angular/platform-browser";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-lista-capitulos',
@@ -9,7 +10,23 @@ import {Router} from "@angular/router";
 })
 export class ListaCapitulosComponent implements OnInit {
 
-  constructor(public sanitizer: DomSanitizer, private _router: Router) { }
+  imagen;
+  nombre;
+  sinopsis;
+  seriesDetalle: any;
+  datosHijos: any;
+
+
+  constructor(public sanitizer: DomSanitizer,
+              private _router: Router,
+              private httpClient: HttpClient,
+              private _activatedRoute: ActivatedRoute) {
+
+    this._activatedRoute.params.subscribe(params => {
+      this.obtenerDatos(params['id']);
+    });
+
+  }
 
   listaTemporadas=[
     {
@@ -35,6 +52,21 @@ export class ListaCapitulosComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  obtenerDatos(id) {
+    this.httpClient.get(`http://localhost:1337/Serie/${id}`).subscribe((data: any[]) => {
+        this.seriesDetalle = data;
+        this.datosHijos = this.seriesDetalle.temporadas;
+        console.log(this.datosHijos)
+        this.imagen = this.seriesDetalle.imagen
+      this.nombre = this.seriesDetalle.nombre
+      this.sinopsis = this.seriesDetalle.sinopsis
+
+
+      }
+    );
+
   }
 
 }
