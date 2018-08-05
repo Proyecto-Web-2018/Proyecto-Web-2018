@@ -3,12 +3,12 @@
 
   <div class="col-sm-12">
 
-    <div class="card bg-dark text-white" >
+    <div class="card bg-dark text-white">
       <img class="card-img" src="{{imagen}}" alt="Card image" style="height: 40rem">
-          <div class="card-img-overlay" style="width: 40rem; padding-top: 30rem">
-            <!--<h5 class="card-title">{{nombre}}</h5>-->
-            <span style="font-weight: 300; font-size: .875em;" class="card-text">{{sinopsis}}</span>
-          </div>
+      <div class="card-img-overlay" style="width: 40rem; padding-top: 30rem">
+        <!--<h5 class="card-title">{{nombre}}</h5>-->
+        <span style="font-weight: 300; font-size: .875em;" class="card-text">{{sinopsis}}</span>
+      </div>
 
     </div>
 
@@ -17,30 +17,32 @@
 
   <div class="col-sm-12">
 
-    <div *ngFor="let lista of listaTemporadas">
-      <div class="row mt-4">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-3">
-          <h2 align="center"> {{lista.titulo}}</h2>
-          <img [src]="lista.img" class="img-fluid rounded mx-auto d-block"  alt="">
-        </div>
-        <div class="col-sm-1"> </div>
-        <div  class="col-sm-5" style="text-align: center">
-          <h3>Capitulos</h3>
-          <div *ngFor="let l of lista.capitulos; let i=index" >
-            <div class="row hvr-grow">
-              <h5 (click)="redirect()" >{{lista.capitulos[i]}}</h5>
-            </div>
+    <div class="row mt-4" *ngFor="let lista of temporadas" style="padding-left: 1rem">
+
+      <div class="col-sm-3" style="padding-top: 1rem">
+        <h2 align="center">Temporada {{lista.numero}}</h2>
+        <img [src]="lista.imagen" class="img-fluid rounded mx-auto d-block" style="height: 25rem; width: 20rem" alt="">
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-8" style="padding-top: 4rem">
+        <div class="hvr-grow" id="hola" *ngFor="let info of lista.capitulos; let i = index" style="width: 90%">
+          <div class="row">
+          <div class="col-sm-2"><span>Episodio {{i+1}}</span></div>
+          <div class="col-sm-8"><span>{{info.titulo}}</span></div>
+          <div class="col-sm-2"><span>{{info.duracion}}</span></div>
+
+
+
+
+
+          <!--<h6 (click)="redirect()" >Episodio {{i}} {{info.titulo}}     {{info.duracion}}</h6>-->
           </div>
         </div>
-        <div class="col-sm-2"> </div>
       </div>
-
 
     </div>
 
   </div>
-
 
 
 </div>

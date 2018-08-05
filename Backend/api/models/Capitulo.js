@@ -21,9 +21,6 @@ module.exports = {
       type: 'string',
       required: true
     },
-    imagen: {
-      type: 'string'
-    },
     link: {
       type: 'string',
       required: true

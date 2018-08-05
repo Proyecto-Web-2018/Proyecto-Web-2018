@@ -17,6 +17,9 @@ module.exports = {
       type: 'number',
       required: true
     },
+    imagen: {
+      type: 'string'
+    },
 
     serie:{
       model:'Serie'
