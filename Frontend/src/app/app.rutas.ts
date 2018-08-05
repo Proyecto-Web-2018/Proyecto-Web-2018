@@ -29,11 +29,11 @@ export const RUTAS: Routes = [
     path: 'reproducir',
     children: [
       {
-        path: 'pelicula/:id',
+        path: 'pelicula/:pelicula/:id',
         component: ReproductorComponent
       },
       {
-        path: 'capitulo/:id',
+        path: 'capitulo/:capitulo/:id',
         component: ReproductorComponent
       }
     ]

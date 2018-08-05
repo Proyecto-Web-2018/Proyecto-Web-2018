@@ -26,25 +26,48 @@ export class ReproductorComponent implements OnInit {
               private _activatedRoute: ActivatedRoute,
               private httpClient: HttpClient) {
     this._activatedRoute.params.subscribe(params => {
-      this.obtenerDatos(params['id']);
+      this.obtenerDatos(params['id'], params['pelicula'], params['capitulo']);
+      console.log(params['pelicula']);
+      console.log(params['capitulo']);
     });
   }
 
   ngOnInit() {
   }
 
-  obtenerDatos(id) {
-    this.httpClient.get(`http://localhost:1337/Peliculas/${id}`).subscribe((data: any[]) => {
-        this.peliculaDetalle = data;
-        console.log(this.peliculaDetalle);
-        this.url = this.peliculaDetalle.link;
-        this.titulo = this.peliculaDetalle.nombre;
-        this.duracion = this.peliculaDetalle.duracion;
-        this.genero = this.peliculaDetalle.genero;
-        this.raiting = this.peliculaDetalle.rating;
-        this.sinopsis = this.peliculaDetalle.sinopsis;
-      }
-    );
+  obtenerDatos(id, pelicula, capitulo) {
+
+    if (pelicula === undefined){
+
+      this.httpClient.get(`http://localhost:1337/Capitulo/${id}`).subscribe((data: any[]) => {
+          this.peliculaDetalle = data;
+          console.log(this.peliculaDetalle);
+          this.url = this.peliculaDetalle.link;
+          this.titulo = this.peliculaDetalle.titulo;
+          this.duracion = this.peliculaDetalle.duracion;
+          this.genero = this.peliculaDetalle.genero;
+          this.raiting = this.peliculaDetalle.rating;
+          this.sinopsis = this.peliculaDetalle.sinopsis;
+        }
+      );
+
+    } else {
+
+      this.httpClient.get(`http://localhost:1337/Peliculas/${id}`).subscribe((data: any[]) => {
+          this.peliculaDetalle = data;
+          console.log(this.peliculaDetalle);
+          this.url = this.peliculaDetalle.link;
+          this.titulo = this.peliculaDetalle.nombre;
+          this.duracion = this.peliculaDetalle.duracion;
+          this.genero = this.peliculaDetalle.genero;
+          this.raiting = this.peliculaDetalle.rating;
+          this.sinopsis = this.peliculaDetalle.sinopsis;
+        }
+      );
+
+    }
+
+
 
   }
 

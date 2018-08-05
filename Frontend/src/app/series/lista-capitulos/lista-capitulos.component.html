@@ -26,7 +26,7 @@
       <div class="col-sm-1"></div>
       <div class="col-sm-8" style="padding-top: 4rem">
         <div class="hvr-grow" id="hola" *ngFor="let info of lista.capitulos; let i = index" style="width: 90%">
-          <div class="row" style="padding-bottom: 1rem; font-size: 1.2em">
+          <div class="row" style="padding-bottom: 1rem; font-size: 1.2em" (click)="redirect(info.id)" >
           <div class="col-sm-2" style="margin-top: 1rem"><span>Episodio {{i+1}}</span></div>
           <div class="col-sm-8" style="margin-top: 1rem"><span>{{info.titulo}}</span></div>
           <div class="col-sm-2" style="margin-top: 1rem"><span>{{info.duracion}}</span></div>

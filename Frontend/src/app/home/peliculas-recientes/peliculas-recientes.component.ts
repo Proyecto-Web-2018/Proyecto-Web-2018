@@ -25,9 +25,8 @@ export class PeliculasRecientesComponent implements OnInit {
   redirect(numero: number) {
 
     const id = this.arregloIds[numero];
-    const rutaReproductor = ['/reproducir', 'pelicula', id];
+    const rutaReproductor = ['/reproducir', 'pelicula', 'p', id];
     this._router.navigate(rutaReproductor);
-    console.log(id);
   }
 
   getPeliculas() {

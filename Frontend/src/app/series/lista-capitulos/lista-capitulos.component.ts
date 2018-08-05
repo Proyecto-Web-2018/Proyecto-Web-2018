@@ -27,30 +27,10 @@ export class ListaCapitulosComponent implements OnInit {
     this._activatedRoute.params.subscribe(params => {
       this.obtenerDatos(params['id']);
     });
-
   }
 
-  listaTemporadas = [
-    {
-      titulo: 'Temporada 1',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAXfJNM1zPL4RnNq3lXa90Qiuc27bt3oHnppqRrSiqyXmmHPz3w',
-      capitulos: ['Capitulo 1', 'cap 2', 'cap 3', 'cap 4', 'cap 5', 'cap 6']
-    },
-    {
-      titulo: 'Temporada 2',
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMoBtiXiH3Xwiz9ehl-LD9U4dUwV2yhT51yw0phSaxIYhWGR_muw',
-      capitulos: ['Capitulo 1', 'cap 2', 'cap 3', 'cap 4', 'cap 5', 'cap 6', 'cap 7', 'cap 8', 'cap 9']
-    },
-    {
-      titulo: 'Temporada 3',
-      img: 'https://i.ytimg.com/vi/v6Xo0Z-E7Ns/maxresdefault.jpg',
-      capitulos: ['Capitulo 1', 'cap 2', 'cap 3', 'cap 4', 'cap 5', 'cap 6']
-    },
-
-  ];
-
-  redirect() {
-    const rutaReproductor = ['reproducir'];
+  redirect(id) {
+    const rutaReproductor = ['/reproducir', 'capitulo', 'c', id];
     this._router.navigate(rutaReproductor);
   }
 
@@ -77,14 +57,4 @@ export class ListaCapitulosComponent implements OnInit {
     );
 
   }
-
-  obtenerCapitulos(id): any[] {
-    this.httpClient.get(`http://localhost:1337/Capitulo?temporada=${id}`).subscribe((data: any[]) => {
-        this.capitulos = data;
-        console.log(this.capitulos);
-      }
-    );
-    return this.capitulos;
-  }
-
 }

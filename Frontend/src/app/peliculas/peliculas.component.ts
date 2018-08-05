@@ -15,12 +15,12 @@ export class PeliculasComponent implements OnInit {
                private httpClient: HttpClient) { }
 
   redirect(id) {
-    const rutaReproductor = ['/reproducir','pelicula', id];
+    const rutaReproductor = ['/reproducir', 'pelicula', 'p', id];
     this._router.navigate(rutaReproductor);
   }
 
   ngOnInit() {
-    this.getPeliculas()
+    this.getPeliculas();
   }
 
   getPeliculas() {
