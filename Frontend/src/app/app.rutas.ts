@@ -8,7 +8,7 @@ import {NotFoundComponent} from './not-found/not-found.component';
 import {PeliculasComponent} from './peliculas/peliculas.component';
 import {SeriesComponent} from './series/series.component';
 import {GenerosComponent} from './generos/generos.component';
-import {ListaCapitulosComponent} from './series/lista-capitulos/lista-capitulos.component';
+import {ListaCapitulosComponent} from './lista-capitulos/lista-capitulos.component';
 
 export const RUTAS: Routes = [
 

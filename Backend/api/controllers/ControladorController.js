@@ -28,6 +28,18 @@ module.exports = {
 
   },
 
+  buscarCuatroSeries: function (req, res) {
+
+    var query = "SELECT * FROM serie limit 0,4";
+    Serie.getDatastore().sendNativeQuery(query,function(err, rawResult) {
+      if (err) { return res.serverError(err); }
+
+      return res.json(rawResult.rows);
+
+    });
+
+  },
+
 
 };
 
