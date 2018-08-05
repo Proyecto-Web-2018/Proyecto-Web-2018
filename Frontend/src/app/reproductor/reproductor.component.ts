@@ -27,8 +27,6 @@ export class ReproductorComponent implements OnInit {
               private httpClient: HttpClient) {
     this._activatedRoute.params.subscribe(params => {
       this.obtenerDatos(params['id'], params['pelicula'], params['capitulo']);
-      console.log(params['pelicula']);
-      console.log(params['capitulo']);
     });
   }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-generos',
@@ -8,34 +9,41 @@ import {Router} from "@angular/router";
 })
 export class GenerosComponent implements OnInit {
 
-  constructor( private _router: Router) { }
+  arregloPeliculas: any;
+  arregloSeries: any;
+  genero: any;
+  nombre = '';
 
+  constructor( private _activatedRoute: ActivatedRoute, private _router: Router, private httpClient: HttpClient) {
 
-  arregloGeneros=[
-    {
-      img:"https://images.amcnetworks.com/ifc.com/wp-content/uploads/2011/10/expendables-10052011.jpg",
-      genero:"Acción",
-   },
-    {
-      img:"http://digitalspyuk.cdnds.net/15/31/1280x640/landscape-the-shining.jpg",
-      genero:"Terror",
-    },
-    {
-      img:"https://i.ytimg.com/vi/IEuZCv7GlPw/maxresdefault.jpg",
-      genero:"Sci - Fi",
-    },
-    {
-      img:"https://previews.123rf.com/images/shotsstudio/shotsstudio1106/shotsstudio110600181/9881720-friends-sitting-on-couch-laughing-at-comedy-movie.jpg",
-      genero:"Comedia",
-    },
-  ];
+    this._activatedRoute.params.subscribe(params => {
+      this.obtenerDatos(params['id']);
+    });
 
-  redirect(){
-    const rutaReproductor= ['peliculas'];
-    this._router.navigate(rutaReproductor)
   }
 
   ngOnInit() {
+  }
+
+  obtenerDatos(id) {
+
+      this.httpClient.get(`http://localhost:1337/Genero/${id}`).subscribe((data: any[]) => {
+          this.genero = data;
+          this.nombre = this.genero.nombre
+          this.arregloPeliculas = this.genero.peliculas;
+          this.arregloSeries = this.genero.series;
+        }
+      );
+  }
+
+  redirect(id) {
+    const rutaReproductor = ['/reproducir', 'pelicula', 'p', id];
+    this._router.navigate(rutaReproductor);
+  }
+
+  redirectSerie(id) {
+    const rutaReproductor = ['/serie', id];
+    this._router.navigate(rutaReproductor);
   }
 
 }

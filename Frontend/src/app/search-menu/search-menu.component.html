@@ -2,7 +2,7 @@
 
   <div class="col-sm-12">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <h3 style="color: red" [routerLink]="['/home']">PoliNetflix</h3>
+      <h3 style="color: red" (click)="validarCookie()">PoliNetflix</h3>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,11 +28,14 @@
               Generos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" (click)="redirectPeliculas()">Accion</a>
+              <div *ngFor="let info of arregloGeneros">
+                <a class="dropdown-item" (click)="redirectGenero(info.id)" >{{info.nombre}}</a>
+              </div>
+              <!--<a class="dropdown-item" (click)="redirectPeliculas()">Accion</a>
               <a class="dropdown-item" (click)="redirectPeliculas()">Terror</a>
               <a class="dropdown-item"(click)="redirectPeliculas()">Sci-fi</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#generos">Todos</a>
+              <a class="dropdown-item" href="#generos">Todos</a>-->
             </div>
           </li>
         </ul>
@@ -50,16 +53,15 @@
               {{username}}
             </button>
             <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-              <a class="dropdown-item" (click)="redirectPeliculas()">Lista Peliculas</a>
-              <a class="dropdown-item" (click)="redirectSeries()">Lista Series</a>
+              <!--<a class="dropdown-item" (click)="redirectPeliculas()">Lista Peliculas</a>
+              <a class="dropdown-item" (click)="redirectSeries()">Lista Series</a>-->
               <a class="dropdown-item" href="#">Configuraciones</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="´#login">Logout</a>
+              <a class="dropdown-item" href="#login">Logout</a>
             </div>
           </div>
 
         </form>
-
 
 
       </div>

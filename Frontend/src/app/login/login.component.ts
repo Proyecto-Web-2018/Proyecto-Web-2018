@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
         console.log(this.passwordServer);
 
         if (this._credencialesService.login(this.password, this.passwordServer) === true) {
-          const rutaHomeUsuario = ['/usuario', this.usuarioId, 'home'];
+          const rutaHomeUsuario = ['/home'];
           this._router.navigate(rutaHomeUsuario);
           // const Cookies2 = Cookies.noConflict();
           Cookies.set('cookieWeb', {username: this.username, id: this.usuarioId, estado: 'true'});

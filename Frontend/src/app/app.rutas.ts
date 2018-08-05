@@ -14,8 +14,8 @@ export const RUTAS: Routes = [
 
   {
     path: 'home',
-    component: HomeComponent
-    // canActivate: [AutorizacionService],
+    component: HomeComponent,
+    canActivate: [AutorizacionService],
   },
   {
     path: 'error',
@@ -51,7 +51,7 @@ export const RUTAS: Routes = [
     component: SeriesComponent
   },
   {
-    path: 'generos',
+    path: 'generos/:id',
     component: GenerosComponent
   },
   {
