@@ -21,10 +21,16 @@
 </div>
 
   <div class="col-sm-12"></div>
-  <div class="col-sm-12" style="padding-left: 40rem">
-    <button type="button" class="btn btn-link">Mostrar Más</button>
+  <div class="col-sm-12" style="padding-left: 35rem; padding-top: 1rem">
+    <!--<button type="button" class="btn btn-link">Mostrar Más</button>-->
+    <div class="row">
+
+      <div class="col-sm-2" ><button id="peliculaAnterior" class="btn btn-primary" (click)="mostrarAnteriores('peliculaAnterior','peliculaSiguiente')">Anteriores</button></div>
+      <div class="col-sm-2" ><button id="peliculaSiguiente" class="btn btn-primary" (click)="mostrarMas('peliculaSiguiente','peliculaAnterior')">Siguientes</button></div>
+
+    </div>
   </div>
-  <div class="col-sm-12"></div>
+  <div class="col-sm-12" style="color: black">d</div>
 
 </div>
 

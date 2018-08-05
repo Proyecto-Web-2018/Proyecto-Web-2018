@@ -20,5 +20,7 @@ module.exports.routes = {
 
   'GET /cuatroSeries': 'ControladorController.buscarCuatroSeries',
 
+  'GET /buscarPeliculas/:numero': 'ControladorController.buscarPelicula',
+
 
 };
